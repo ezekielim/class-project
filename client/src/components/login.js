@@ -19,8 +19,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://cypherx.com/">
-        cypherX
+      <Link color="inherit" href="https://comlab.domain/">
+        COMLAB
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -56,9 +56,11 @@ export default function SignIn() {
       <CssBaseline />
       <div className={classes.paper}>
         <Avatar className={classes.avatar}>{/* <LockOutlinedIcon /> */}</Avatar>
+
         <Typography component="h1" variant="h5">
           Sign in
         </Typography>
+
         <form className={classes.form} noValidate>
           <TextField
             variant="outlined"
@@ -87,6 +89,7 @@ export default function SignIn() {
             label="Remember me"
           />
           {/* Add <Link to={home}></Link> */}
+
           <Button
             type="submit"
             fullWidth
@@ -94,8 +97,11 @@ export default function SignIn() {
             color="primary"
             className={classes.submit}
           >
-            Sign In
+            <Link href="Community" variant="body2">
+              Sign In
+            </Link>
           </Button>
+
           <Grid container>
             <Grid item xs>
               <Link href="#" variant="body2">

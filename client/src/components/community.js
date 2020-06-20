@@ -18,8 +18,8 @@ function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      <Link color="inherit" href="https://comlab.domain/">
+        COMLAB
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -94,20 +94,18 @@ export default function Community() {
               color="textSecondary"
               paragraph
             >
-              Something short and leading about the collection below—its
-              contents, the creator, etc. Make it short and sweet, but not too
-              short so folks don&apos;t simply skip over it entirely.
+              THIS SECTION WILL BE FOR FEATURED ITEMS THROUGH MeetUp's API
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
                   <Button variant="contained" color="primary">
-                    Main call to action
+                    Create Group
                   </Button>
                 </Grid>
                 <Grid item>
                   <Button variant="outlined" color="primary">
-                    Secondary action
+                    Invite Members
                   </Button>
                 </Grid>
               </Grid>
@@ -122,24 +120,21 @@ export default function Community() {
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
-                    image="https://source.unsplash.com/random"
+                    image="https://source.unsplash.com/collection/2270935/shapes-and-patterns"
                     title="Image title"
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Heading
+                      Group
                     </Typography>
-                    <Typography>
-                      This is a media card. You can use this section to describe
-                      the content.
-                    </Typography>
+                    <Typography>Example description</Typography>
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary">
                       View
                     </Button>
                     <Button size="small" color="primary">
-                      Edit
+                      Join
                     </Button>
                   </CardActions>
                 </Card>
@@ -150,17 +145,13 @@ export default function Community() {
       </main>
       {/* Footer */}
       <footer className={classes.footer}>
-        <Typography variant="h6" align="center" gutterBottom>
-          Footer
-        </Typography>
+        <Typography variant="h6" align="center" gutterBottom></Typography>
         <Typography
           variant="subtitle1"
           align="center"
           color="textSecondary"
           component="p"
-        >
-          Something here to give the footer a purpose!
-        </Typography>
+        ></Typography>
         <Copyright />
       </footer>
       {/* End footer */}
