@@ -1,5 +1,5 @@
 import React from "react";
-import Avatar from "@material-ui/core/Avatar";
+// import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import TextField from "@material-ui/core/TextField";
@@ -14,6 +14,22 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
 //Imported Components
+
+//asset variables
+const logo = require("../assets/goose.png");
+
+let duckSvg = (
+  <div>
+    Icons made by{" "}
+    <a href="https://www.flaticon.com/authors/freepik" title="Freepik">
+      Freepik
+    </a>{" "}
+    from{" "}
+    <a href="https://www.flaticon.com/" title="Flaticon">
+      www.flaticon.com
+    </a>
+  </div>
+);
 
 function Copyright() {
   return (
@@ -35,10 +51,11 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
   },
-  avatar: {
-    margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
-  },
+  // avatar: {
+  //   // margin: theme.spacing(1),
+  //   // // backgroundColor: theme.palette.secondary.main,
+  //   // image: duckSvg,
+  // },
   form: {
     width: "100%", // Fix IE 11 issue.
     marginTop: theme.spacing(1),
@@ -55,10 +72,10 @@ export default function SignIn() {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}>{/* <LockOutlinedIcon /> */}</Avatar>
+        <img className="img-logo" src={logo} />
 
         <Typography component="h1" variant="h5">
-          Sign in
+          COMLAB
         </Typography>
 
         <form className={classes.form} noValidate>

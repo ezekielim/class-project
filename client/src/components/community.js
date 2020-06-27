@@ -94,14 +94,17 @@ export default function Community() {
               color="textSecondary"
               paragraph
             >
-              THIS SECTION WILL BE FOR FEATURED ITEMS THROUGH MeetUp's API
+              “Be like a duck, paddling and working very hard inside the water,
+              but what everyone sees is a smiling and calm face.” - Duck Proverb
             </Typography>
             <div className={classes.heroButtons}>
               <Grid container spacing={2} justify="center">
                 <Grid item>
-                  <Button variant="contained" color="primary">
-                    Create Group
-                  </Button>
+                  <Link href="createproject">
+                    <Button variant="contained" color="primary">
+                      Create Community Project
+                    </Button>
+                  </Link>
                 </Grid>
                 <Grid item>
                   <Button variant="outlined" color="primary">
@@ -125,9 +128,14 @@ export default function Community() {
                   />
                   <CardContent className={classes.cardContent}>
                     <Typography gutterBottom variant="h5" component="h2">
-                      Group
+                      Project
                     </Typography>
-                    <Typography>Example description</Typography>
+                    <Typography>
+                      The purpose of the research project is for the students to
+                      learn how to formulate a simple natural language
+                      problem/task/application and to experience how to solve
+                      itusing methods, algorithms and techniques
+                    </Typography>
                   </CardContent>
                   <CardActions>
                     <Button size="small" color="primary">
@@ -143,7 +151,7 @@ export default function Community() {
           </Grid>
         </Container>
       </main>
-      {/* Footer */}
+
       <footer className={classes.footer}>
         <Typography variant="h6" align="center" gutterBottom></Typography>
         <Typography
@@ -154,7 +162,6 @@ export default function Community() {
         ></Typography>
         <Copyright />
       </footer>
-      {/* End footer */}
     </React.Fragment>
   );
 }

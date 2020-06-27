@@ -14,7 +14,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
 
 //Imported components
-
+const logo = require("../assets/goose.png");
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
@@ -55,7 +55,7 @@ export default function SignUp() {
     <Container component="main" maxWidth="xs">
       <CssBaseline />
       <div className={classes.paper}>
-        <Avatar className={classes.avatar}>{/* <LockOutlinedIcon /> */}</Avatar>
+        <img className="img-logo" src={logo} />
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
@@ -107,22 +107,19 @@ export default function SignUp() {
                 autoComplete="current-password"
               />
             </Grid>
-            <Grid item xs={12}>
-              <FormControlLabel
-                control={<Checkbox value="allowExtraEmails" color="primary" />}
-                label="I want to receive inspiration, marketing promotions and updates via email."
-              />
-            </Grid>
+            <Grid item xs={12}></Grid>
           </Grid>
-          <Button
-            type="submit"
-            fullWidth
-            variant="contained"
-            color="primary"
-            className={classes.submit}
-          >
-            Sign Up
-          </Button>
+          <Link href="/">
+            <Button
+              type="submit"
+              fullWidth
+              variant="contained"
+              color="primary"
+              className={classes.submit}
+            >
+              Sign Up
+            </Button>
+          </Link>
           <Grid container justify="flex-end">
             <Grid item>
               <Link href="/" variant="body2">
